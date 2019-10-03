@@ -21,5 +21,4 @@ Metrics are the factors which can help us generate a predictive value for the br
 
 - In Taiwan, [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759216/) shows a 13.8°C is a critical temperature to limit the occurance of *Aedes*
 
-- 
 
