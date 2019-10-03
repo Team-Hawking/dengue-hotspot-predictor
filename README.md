@@ -6,6 +6,8 @@ In the recent years the world has witnessed a dramatic surge of a mosquito-borne
 
 Metrics are the factors which can help us generate a predictive value for the breeding spot of Aedes mosquito and the outbreak of Dengue as whole. The key metrices we are considering:  *Temperature*, *Precipitation*, *Relative Humidity*, *Vegetation*, *Railfall*
 
+### Temperature
+
  - Most common throughout tropical and sub-tropical region
 
  - Optimal temperatures for development, longevity, and fecundity are between 22°C and 32°C ([Beserra et al. 2009](https://onlinelibrary.wiley.com/doi/full/10.1111/jvec.12187#jvec12187-bib-0004))
@@ -17,7 +19,7 @@ Metrics are the factors which can help us generate a predictive value for the br
  - Projected temperature elevation of 2°C by the end of the 21st century (cross check sources) [(Donalísio and Glasser 2002)](https://onlinelibrary.wiley.com/doi/full/10.1111/jvec.12187#jvec12187-bib-0015)
 
 
-- In Taiwan, [study]() shows a 13.8°C is a critical temperature to limit the occurance of *Aedes*
+- In Taiwan, [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759216/) shows a 13.8°C is a critical temperature to limit the occurance of *Aedes*
 
 - 
 
