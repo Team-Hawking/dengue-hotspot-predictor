@@ -19,3 +19,17 @@ with(dataset, hist(dataset$station_precip_mm, breaks = 100, main="Total precipit
 with(dataset, hist(dataset$reanalysis_avg_temp_k, breaks = 100, main=" Average air temperature"))
 with(dataset, hist(dataset$reanalysis_sat_precip_amt_mm, breaks = 100, main="Total precipitation (climate forecast)"))
 with(dataset, hist(dataset$reanalysis_avg_temp_k, breaks = 100, main="Average air temperature (climate forecast)"))
+
+# histogram of temperature (Min = 22°C and Max = 32°C)
+par(mfrow=c(1,1))
+# for min temperature
+hist(dataset$station_min_temp_c, col="green", main="Station Min Temperature")
+abline(v = 22, lwd = 2, col="red")
+abline(v = median(dataset$station_avg_temp_c), col="magenta", lwd = 4)
+
+# for max temperature
+hist(dataset$station_max_temp_c, col="green", main="Station Max Temperature")
+rug(dataset$station_max_temp_c)
+abline(v = 32, lwd = 2, col="red")
+abline(v = median(dataset$station_max_temp_c), col="magenta", lwd = 4)
+
