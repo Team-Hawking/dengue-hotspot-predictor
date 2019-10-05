@@ -28,6 +28,7 @@ Metrics are the factors which can help us generate a predictive value for the br
  - [NASA Open Data Portal](https://data.nasa.gov/)
  - [NASA Earth Data](https://worldview.earthdata.nasa.gov/)
  - [NASA Earth Observatory](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
+ - [NASA Vegetation Data](https://data.nasa.gov/browse?q=vegetation+)
  - [Impact of rainfall on Aedes aegpyti populations](https://www.researchgate.net/publication/321180537_Impact_of_rainfall_on_Aedes_aegypti_populations)
  - [Periods of high dengue transmission defined by rainfall do not impact efficacy of dengue vaccine in regions of endemic disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207878)
  - [Forecast of Dengue Incidence Using Temperature and Rainfall](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
