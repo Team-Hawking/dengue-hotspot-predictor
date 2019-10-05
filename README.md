@@ -4,7 +4,7 @@ In the recent years the world has witnessed a dramatic surge of a mosquito-borne
 
 ## Metrics
 
-Metrics are the factors which can help us generate a predictive value for the breeding spot of Aedes mosquito and the outbreak of Dengue as whole. The key metrices we are considering:  *Temperature*, *Precipitation*, *Relative Humidity*, *Vegetation*, *Railfall*
+Metrics are the factors which can help us generate a predictive value for the breeding spot of Aedes mosquito and the outbreak of Dengue as whole. The key metrices we are considering:  *Temperature*, *Precipitation*, *Relative Humidity*, *Vegetation*, *Railfall*, *Urbanization*, *Population density*
 
 ### Temperature
 
@@ -14,11 +14,22 @@ Metrics are the factors which can help us generate a predictive value for the br
  
  - Temperature 10°C and below limits the growth of larvae and adult survival
 
- - Higher temperature are favourable for growth of Aedes
+ - Higher temperature are favourable for growth of Aedes. Cnversely temperature higher than 35°C impedes the development of Aedes mosquito.
  
  - Projected temperature elevation of 2°C by the end of the 21st century (cross check sources) [(Donalísio and Glasser 2002)](https://onlinelibrary.wiley.com/doi/full/10.1111/jvec.12187#jvec12187-bib-0015)
 
 
 - In Taiwan, [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759216/) shows a 13.8°C is a critical temperature to limit the occurance of *Aedes*
+
+
+
+### Resources
+
+ - [NASA Open Data Portal](https://data.nasa.gov/)
+ - [NASA Earth Data](https://worldview.earthdata.nasa.gov/)
+ - [NASA Earth Observatory](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
+ - [Impact of rainfall on Aedes aegpyti populations](https://www.researchgate.net/publication/321180537_Impact_of_rainfall_on_Aedes_aegypti_populations)
+ - [Periods of high dengue transmission defined by rainfall do not impact efficacy of dengue vaccine in regions of endemic disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207878)
+ - [Forecast of Dengue Incidence Using Temperature and Rainfall](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
 
 
