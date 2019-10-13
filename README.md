@@ -22,6 +22,41 @@ Metrics are the factors which can help us generate a predictive value for the br
 - In Taiwan, [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759216/) shows a 13.8°C is a critical temperature to limit the occurance of *Aedes*
 
 
+### Vegetation 
+
+
+ - Normalized difference vegetation index (NDVI) is provided by NASA MODIS satellite NDVI database
+ 
+ - This [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163306/) uses two greeness indexs to draw association with Dengue in Taiwan - Normalized difference vegetation index (NDVI) and enchanced vegetation index (EVI).
+ 
+ - Sounthern Taiwan's ecology is conducive to breeding "Aedes". Study the ecological structure of that region.
+
+  -  NASA’s Moderate Resolution Imaging Spectroradiometer (MODIS) was used for collecting NDVI (a greeness index).
+ 
+  - NDVI data are generated every 16 days at 250 m spatial resolution
+
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Statistical tools
 
  - **95% Confidence Interval of (x,y)**: If we take repeated samples, then 95% of the sample interval produced will contain the true (population) statistic. Example: we take repeated sampling of mean temperature of a region and concluded with 95% confidence that the interval was (30,40). It means 95% of the times the interval (30,40) contained the actual (population) mean that we are trying to predict. So, we are 95% confident with our results. 
