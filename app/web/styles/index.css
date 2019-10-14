@@ -8,6 +8,12 @@ body {
   background-color: black
 }
 
+.option-btn {
+  width: 120px;
+}
+.feature-btn {
+  width: 120px;
+}
 /* .earth_box {
   padding: 10% 10% 10% 10%;
   margin-top: 50%
