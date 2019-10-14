@@ -1,0 +1,26 @@
+.side_panel {
+  background-color: black ;
+  float: left;
+  margin-left: 30px;
+margin-top: 30px;
+}
+body {
+  background-color: black
+}
+
+/* .earth_box {
+  padding: 10% 10% 10% 10%;
+  margin-top: 50%
+} */
+
+/* html, body{
+  padding: 0; margin: 0;
+} */
+#earth_div{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background-color: #000;
+  /* position: absolute !important; */
+}
