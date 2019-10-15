@@ -127,8 +127,12 @@ Metrics are the factors which can help us generate a predictive value for the br
  - [Periods of high dengue transmission defined by rainfall do not impact efficacy of dengue vaccine in regions of endemic disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207878)
  - [Forecast of Dengue Incidence Using Temperature and Rainfall](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
  - [DataVizProject](https://datavizproject.com/)
+ - [Effect of temperature, relative humidity and rainfall on dengue fever and leptospirosis infections in Manila, the Philippines](https://www.cambridge.org/core/journals/epidemiology-and-infection/article/effect-of-temperature-relative-humidity-and-rainfall-on-dengue-fever-and-leptospirosis-infections-in-manila-the-philippines/0BF42941BFD80CE886095D4C35203279/core-reader)
 
 
 ### Datasets:
 
- - 
+ - [NASA - Vegetation Index and Phenology (VIP) Vegetation Indices Daily Global 0.05Deg CMG V004](https://data.nasa.gov/dataset/Vegetation-Index-and-Phenology-VIP-Vegetation-Indi/psf5-q3xa)
+ - [NASA - Mirador Water and Energy Cycles](https://e4ftl01.cr.usgs.gov/MEASURES/VIP01.004/)
+
+
