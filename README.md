@@ -25,18 +25,25 @@ Metrics are the factors which can help us generate a predictive value for the br
 ### Vegetation 
 
 
- - Normalized difference vegetation index (NDVI) is provided by NASA MODIS satellite NDVI database
+  - Normalized difference vegetation index (NDVI) is provided by NASA MODIS satellite NDVI database
  
- - This [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163306/) uses two greeness indexs to draw association with Dengue in Taiwan - Normalized difference vegetation index (NDVI) and enchanced vegetation index (EVI).
+  - This [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163306/) uses two greeness indexs to draw association with Dengue in Taiwan - Normalized difference vegetation index (NDVI) and enchanced vegetation index (EVI).
  
- - Sounthern Taiwan's ecology is conducive to breeding "Aedes". Study the ecological structure of that region.
+  - Sounthern Taiwan's ecology is conducive to breeding "Aedes". Study the ecological structure of that region.
 
-  -  NASA’s Moderate Resolution Imaging Spectroradiometer (MODIS) was used for collecting NDVI (a greeness index).
+  - NASA’s Moderate Resolution Imaging Spectroradiometer (MODIS) was used for collecting NDVI (a greeness index).
  
   - NDVI data are generated every 16 days at 250 m spatial resolution
 
-  - 
+  - The NDVI in mountainous areas is relatively high, while NDVI in urban areas is generally low.
 
+  - From the results of green land use, most of the farmland is located in lower elevations, and the forests are mostly located at higher altitudes. Park resources are mainly concentrated in urban areas, and grasslands were negatively associated with DF. [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163306/)
+
+  - "when there is lower level of greenness, the dengue fever epidemic becomes more serious." [study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163306/)\
+
+  - Normalized difference vegetation index (NDVI): Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs). range [-1,+1]
+
+  - NDVI: For example, when you have negative values, it’s highly likely that it’s water. On the other hand, if you have a NDVI value close to +1, there’s a high possibility that it’s dense green leaves.
 
 
 
@@ -72,6 +79,35 @@ Metrics are the factors which can help us generate a predictive value for the br
  - **Central Limit Theorem**: If we take repeated samples from a population (not necessarily normally distributed) then the sample satistic (mean, standard deviation) approximates a normal distribution as n increases (n=sample size). Also standard deviation decreases.
 
    - [Central Limit Theorem - Khan Academy](https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap/sampling-distribution-mean/v/central-limit-theorem) 
+ 
+   
+ - **Miscellaneous**
+
+   - standard deviation and variance are sensitive to outliers, whereas mean and median absolute deviation is not
+
+   - For exploring data distribution: Boxplot, frequency table, histogram, density plot
+
+   - Skewness and kurtosis for visualizing the extreme values
+
+   - For comapring different distributions use *BoxPlot* side by side
+
+   - For categorical data: use percentages and proportions
+   
+   - correlaytion coefficient => [-1, +1], 0 = no correlation
+  
+   - exploratory analysis => Pearson's correlation coefficient; 
+
+   - **Spearman's rho or Kendall's tau** for rank based data (robust can handle certain types of nonlinearities)
+
+   - **correlation coefficient** = measures the extent to which one variable associated with another
+
+   - **contingency table**: for showing ferquency distribution in a matrix format
+
+   - **Hexagonal Binning**: plots density rather than individual data points; for overlapping data. [dataviz](https://datavizproject.com/data-type/hexagonal-binning/)
+
+   - Rate of urbanization, population density, rate of population increase
+
+   - *"Don't let the tool drive the analysis!"*
 
 
 
@@ -81,22 +117,7 @@ Metrics are the factors which can help us generate a predictive value for the br
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Resources
+### Resources:
 
  - [NASA Open Data Portal](https://data.nasa.gov/)
  - [NASA Earth Data](https://worldview.earthdata.nasa.gov/)
@@ -105,5 +126,9 @@ Metrics are the factors which can help us generate a predictive value for the br
  - [Impact of rainfall on Aedes aegpyti populations](https://www.researchgate.net/publication/321180537_Impact_of_rainfall_on_Aedes_aegypti_populations)
  - [Periods of high dengue transmission defined by rainfall do not impact efficacy of dengue vaccine in regions of endemic disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207878)
  - [Forecast of Dengue Incidence Using Temperature and Rainfall](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
+ - [DataVizProject](https://datavizproject.com/)
 
 
+### Datasets:
+
+ - 
