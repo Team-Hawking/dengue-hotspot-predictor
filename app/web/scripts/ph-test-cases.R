@@ -38,9 +38,21 @@ ggplot(sum_by_month, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=month_name))
 
 
 # line plot
-# Change the color
+# Change the color  
 ggplot(data=sum_by_month, aes(x=month_name, y=df_by_month, group=1)) +
   geom_line(color="red")+
   geom_point() +
   ggtitle("Number of DF cases per month in 2013 - Line chart")
+
+
+
+# group by month
+tm <- group_by(data, name)
+temp_by_month <- summarize(tm, temp_by_month = mean(mean_temp))
+
+ggplot(data=temp_by_month, aes(x=name, y=temp_by_month, group=1)) +
+  geom_line(color="red")+
+  geom_point() +
+  ggtitle("Number of DF cases per month in 2013 - Line chart")
+
 
