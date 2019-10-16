@@ -43,10 +43,22 @@ Metrics are the factors which can help us generate a predictive value for the br
 
   - Normalized difference vegetation index (NDVI): Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs). range [-1,+1]
 
-  - NDVI: For example, when you have negative values, it’s highly likely that it’s water. On the other hand, if you have a NDVI value close to +1, there’s a high possibility that it’s dense green leaves.
+  - NDVI: For example, when you have negative values, it’s highly likely that it’s water. On the other hand, if you have a NDVI value close to +1, there’s a high possibility that it’s dense green leaves. 
 
 
+### Rainfall 
 
+  - One study that assessed climatic factors associated with DF incidence in Manila showed that heavy rainfall in the wet season from June to December was significantly associated with increased DF incidence over 1996–2005 
+(Bravo L, et al. Epidemiology of dengue disease in the Philippines (2000–2011): a systematic literature review. PLoS Neglected Tropical Diseases 2014; 8: e3027.)
+
+
+### Humidity
+
+
+### Population growth rate
+
+
+### Urbanization
 
 
 
@@ -81,7 +93,8 @@ Metrics are the factors which can help us generate a predictive value for the br
    - [Central Limit Theorem - Khan Academy](https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap/sampling-distribution-mean/v/central-limit-theorem) 
  
    
- - **Miscellaneous**
+
+### Miscellaneous
 
    - standard deviation and variance are sensitive to outliers, whereas mean and median absolute deviation is not
 
@@ -109,15 +122,14 @@ Metrics are the factors which can help us generate a predictive value for the br
 
    - *"Don't let the tool drive the analysis!"*
 
+   - Neglected tropical disease (NTD)
+   
+   - Time series analysis ()
 
 
 
 
-
-
-
-
-### Resources:
+### References:
 
  - [NASA Open Data Portal](https://data.nasa.gov/)
  - [NASA Earth Data](https://worldview.earthdata.nasa.gov/)
@@ -134,5 +146,6 @@ Metrics are the factors which can help us generate a predictive value for the br
 
  - [NASA - Vegetation Index and Phenology (VIP) Vegetation Indices Daily Global 0.05Deg CMG V004](https://data.nasa.gov/dataset/Vegetation-Index-and-Phenology-VIP-Vegetation-Indi/psf5-q3xa)
  - [NASA - Mirador Water and Energy Cycles](https://e4ftl01.cr.usgs.gov/MEASURES/VIP01.004/)
+ - [NASA GES-DAAC PAL vegetation continent](https://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.PAL/.vegetation/.continent/index.html?Set-Language=en)
 
 
