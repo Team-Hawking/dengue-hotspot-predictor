@@ -62,8 +62,6 @@ Metrics are the factors which can help us generate a predictive value for the br
 
 
 
-
-
 ### Statistical tools
 
  - **95% Confidence Interval of (x,y)**: If we take repeated samples, then 95% of the sample interval produced will contain the true (population) statistic. Example: we take repeated sampling of mean temperature of a region and concluded with 95% confidence that the interval was (30,40). It means 95% of the times the interval (30,40) contained the actual (population) mean that we are trying to predict. So, we are 95% confident with our results. 
@@ -124,6 +122,7 @@ Metrics are the factors which can help us generate a predictive value for the br
  - [NASA Earth Observatory](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
  - [NASA Vegetation Data](https://data.nasa.gov/browse?q=vegetation+)
  - [NASA - Global Precipitation Measurement](https://www.nasa.gov/mission_pages/GPM/main/index.html)
+ - [NASA World Weather](https://worldwind.arc.nasa.gov/worldweather/)
  - [Impact of rainfall on Aedes aegpyti populations](https://www.researchgate.net/publication/321180537_Impact_of_rainfall_on_Aedes_aegypti_populations)
  - [Periods of high dengue transmission defined by rainfall do not impact efficacy of dengue vaccine in regions of endemic disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207878)
  - [Forecast of Dengue Incidence Using Temperature and Rainfall](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3510154/)
@@ -138,5 +137,6 @@ Metrics are the factors which can help us generate a predictive value for the br
  - [NASA - Vegetation Index and Phenology (VIP) Vegetation Indices Daily Global 0.05Deg CMG V004](https://data.nasa.gov/dataset/Vegetation-Index-and-Phenology-VIP-Vegetation-Indi/psf5-q3xa)
  - [NASA - Mirador Water and Energy Cycles](https://e4ftl01.cr.usgs.gov/MEASURES/VIP01.004/)
  - [NASA GES-DAAC PAL vegetation continent](https://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.PAL/.vegetation/.continent/index.html?Set-Language=en)
+ - [NASA World Weather](https://worldwind.arc.nasa.gov/worldweather/)
 
 
