@@ -137,6 +137,8 @@ Metrics are the factors which can help us generate a predictive value for the br
  - [NASA - Vegetation Index and Phenology (VIP) Vegetation Indices Daily Global 0.05Deg CMG V004](https://data.nasa.gov/dataset/Vegetation-Index-and-Phenology-VIP-Vegetation-Indi/psf5-q3xa)
  - [NASA - Mirador Water and Energy Cycles](https://e4ftl01.cr.usgs.gov/MEASURES/VIP01.004/)
  - [NASA GES-DAAC PAL vegetation continent](https://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.PAL/.vegetation/.continent/index.html?Set-Language=en)
+ 
  - [NASA World Weather](https://worldwind.arc.nasa.gov/worldweather/)
+ - [cost] (https://m.dw.com/bn/৭১-হাজার-ডেঙ্গুরোগীর-চিকিৎসায়-খরচ-২৭৮-কোটি-টাকা/a-50212927)
 
 
