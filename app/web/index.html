@@ -3,10 +3,21 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/JavaScript/horizontal_timeline.2.0.min.js"></script>
-
     <script src="http://www.webglearth.com/v2/api.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <style>
+        #custom-handle {
+          width: 3em;
+          height: 1.6em;
+          top: 50%;
+          margin-top: -.8em;
+          text-align: center;
+          line-height: 1.6em;
+        }
+    </style>
+
     <script>
       let globeData = [
         {
@@ -206,6 +217,24 @@
         })
       }
     </script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      var handle = $( "#custom-handle" );
+      $( "#slider" ).slider({
+        create: function() {
+          handle.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+          handle.text( ui.value );
+        }
+      });
+    } );
+
+    </script>
+
     <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
       <title>Dengue Hotspot Predictor</title>
     </head>
@@ -230,11 +259,57 @@
           <div id="earth_div"></div>
         </div>
 
-        <div class="feature_box">
+        <div class="feature_box container">
+          <br><br>
+            <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item" id="2003"><a class="page-link" href="#">
+                2003
+              </a></li>
+              <li class="page-item" id="2004"><a class="page-link" href="#">2004</a></li>
+              <li class="page-item" id="2005"><a class="page-link" href="#">2005</a></li>
+              <li class="page-item" id="2006"><a class="page-link" href="#">2006</a></li>
+              <li class="page-item" id="2007"><a class="page-link" href="#">2007</a></li>
+              <li class="page-item" id="2008"><a class="page-link" href="#">2008</a></li>
+              <li class="page-item" id="2009"><a class="page-link" href="#">2009</a></li>
+              <li class="page-item" id="2010"><a class="page-link" href="#">2010</a></li>
+              <li class="page-item" id="2011"><a class="page-link" href="#">2011</a></li>
+              <li class="page-item" id="2012"><a class="page-link" href="#">2012</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
   </body>
+
+  <script>
+    $(".page-item").click(function(){
+      ["#2003", "#2004", "#2005", "#2006", "#2007", "#2008", "#2009", "#2010", "#2011", "#2012"].forEach(obj => {
+
+        if ($(obj).hasClass("active")) {
+          console.log($(obj).hasClass("active"));
+            $(obj).remove("active");
+        }
+        $(this).addClass("page-item")
+
+      });
+      if($(this).hasClass("page-item active")) {
+        $(this).addClass("page-item")
+      } else {
+        $(this).addClass("page-item active")
+      }
+    })
+  </script>
   <!-- bootstrap stuffs -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
