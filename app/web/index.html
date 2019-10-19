@@ -4,9 +4,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="http://www.webglearth.com/v2/api.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
     <style>
         #custom-handle {
           width: 3em;
@@ -17,15 +15,15 @@
           line-height: 1.6em;
         }
     </style>
-
     <script>
+
       let globeData = [
         {
           "country": "Bangladesh",
           "lat": 23.684994,
           "lon": 90.356331,
           "cases": {
-            "2003": 486,
+            "2003": 8213,
             "2004": 3934,
             "2005": 1048,
             "2006": 2198,
@@ -35,6 +33,18 @@
             "2010": 409,
             "2011": 1362,
             "2012": 671
+          },
+          "deaths": {
+            "2003": 7213,
+            "2004": 2934,
+            "2005": 48,
+            "2006": 198,
+            "2007": 66,
+            "2008": 1081,
+            "2009": 374,
+            "2010": 209,
+            "2011": 362,
+            "2012": 71
           }
         },
         {
@@ -52,6 +62,18 @@
             "2010": 887,
             "2011": 712,
             "2012": 1101
+          },
+          "deaths": {
+            "2003": 0,
+            "2004": 79,
+            "2005": 1,
+            "2006": 16,
+            "2007": 20,
+            "2008": 27,
+            "2009": 251,
+            "2010": 287,
+            "2011": 212,
+            "2012": 91
           }
         },
         {
@@ -69,6 +91,18 @@
             "2010": 28292,
             "2011": 17744,
             "2012": 50222
+          },
+          "deaths": {
+            "2003": 54,
+            "2004": 3153,
+            "2005": 1985,
+            "2006": 2317,
+            "2007": 4023,
+            "2008": 1476,
+            "2009": 4535,
+            "2010": 8292,
+            "2011": 7744,
+            "2012": 222
           }
         },
         {
@@ -86,6 +120,18 @@
             "2010": 155777,
             "2011": 58065,
             "2012": 74062
+          },
+          "deaths": {
+            "2003": 934,
+            "2004": 59462,
+            "2005": 15279,
+            "2006": 6425,
+            "2007": 57442,
+            "2008": 5607,
+            "2009": 6052,
+            "2010": 35777,
+            "2011": 65,
+            "2012": 62
           }
         },
         {
@@ -103,6 +149,18 @@
             "2010": 917,
             "2011": 2909,
             "2012": 1083
+          },
+          "deaths": {
+            "2003": 8,
+            "2004": 42,
+            "2005": 126,
+            "2006": 1768,
+            "2007": 680,
+            "2008": 476,
+            "2009": 39,
+            "2010": 17,
+            "2011": 909,
+            "2012": 83
           }
         },
         {
@@ -120,6 +178,18 @@
             "2010": 16529,
             "2011": 4738,
             "2012": 6433
+          },
+          "deaths": {
+            "2003": 2907,
+            "2004": 369,
+            "2005": 7454,
+            "2006": 1383,
+            "2007": 285,
+            "2008": 480,
+            "2009": 287,
+            "2010": 29,
+            "2011": 38,
+            "2012": 33
           }
         },
         {
@@ -137,6 +207,18 @@
             "2010": 917,
             "2011": 79,
             "2012": 183
+          },
+          "deaths": {
+            "2003": 0,
+            "2004": 0,
+            "2005": 0,
+            "2006": 1,
+            "2007": 1,
+            "2008": 0,
+            "2009": 6,
+            "2010": 7,
+            "2011": 9,
+            "2012": 3
           }
         },
         {
@@ -154,6 +236,18 @@
             "2010": 34105,
             "2011": 27162,
             "2012": 44456
+          },
+          "deaths": {
+            "2003": 49,
+            "2004": 63,
+            "2005": 4,
+            "2006": 80,
+            "2007": 4,
+            "2008": 5,
+            "2009": 10,
+            "2010": 5,
+            "2011": 62,
+            "2012": 56
           }
         },
         {
@@ -171,6 +265,18 @@
             "2010": 116947,
             "2011": 64374,
             "2012": 78063
+          },
+          "deaths": {
+            "2003": 7,
+            "2004": 7,
+            "2005": 3,
+            "2006": 6,
+            "2007": 9,
+            "2008": 6,
+            "2009": 4,
+            "2010": 7,
+            "2011": 4,
+            "2012": 3
           }
         },
         {
@@ -188,13 +294,25 @@
             "2010": 745,
             "2011": 358,
             "2012": 930
+          },
+          "deaths": {
+            "2003": 7,
+            "2004": 7,
+            "2005": 3,
+            "2006": 6,
+            "2007": 49,
+            "2008": 26,
+            "2009": 94,
+            "2010": 7,
+            "2011": 4,
+            "2012": 3
           }
         }
       ];
 
       let earth;
       // this should be set dynamically by slider
-      let year = '2013';
+      var year = '2012';
       function initialize() {
         let options = {atmosphere: true, center: [23.684994, 90.356331], zoom: 2.5};
         earth = new WE.map('earth_div', options);
@@ -203,56 +321,39 @@
           maxZoom: 5,
           attribution: 'NASA - Dengue Hotspot Predictor'
         }).addTo(earth);
-
         addMarker();
       }
 
       function addMarker () {
-        globeData.forEach(obj => {
-          console.log();
-          year = "2003"
+        globeData.forEach(function(obj){
           let marker = WE.marker([obj.lat, obj.lon]).addTo(earth);
           let cases = obj.cases[year];
-          marker.bindPopup(`<b>${obj.country}</b><br>Cases: ${cases}<br />`, {maxWidth: 150, closeButton: true});
+          let deaths = obj.deaths[year];
+          marker.bindPopup(`<b>${obj.country}</b><br>Cases: ${cases}<br />Deaths: ${deaths}`, {maxWidth: 150, closeButton: true});
         })
       }
     </script>
     <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      var handle = $( "#custom-handle" );
-      $( "#slider" ).slider({
-        create: function() {
-          handle.text( $( this ).slider( "value" ) );
-        },
-        slide: function( event, ui ) {
-          handle.text( ui.value );
-        }
-      });
-    } );
-
-    </script>
-
     <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
-      <title>Dengue Hotspot Predictor</title>
+      <title>Home - Dengue Hotspot Predictor</title>
     </head>
     <body onload="initialize()">
       <div class="">
         <!-- side panel -->
         <div class="side_panel" class="">
-          <button type="button" class="btn btn-outline-primary option-btn" onclick="window.location='./statistics.html'">Statistics</button><br>
-          <button type="button" class="btn btn-outline-primary option-btn">Regression</button><br>
-          <button type="button" class="btn btn-outline-primary option-btn" onclick="window.location='./clustering.html'">Clustering</button><br>
+          <button type="button" class="btn btn-outline-primary option-btn" onclick="window.open('./statistics.html')">Statistics</button><br>
+          <button type="button" class="btn btn-outline-primary option-btn">Prediction</button><br>
+          <button type="button" class="btn btn-outline-primary option-btn" onclick="window.open('./clustering.html')">Clustering</button><br>
             <button type="button" class="btn btn-outline-primary option-btn">Experiments</button><br>
-            <button type="button" class="btn btn-outline-primary option-btn" onclick="window.location='https://github.com/Team-Hawking/dengue-hotspot-predictor#dengue-hotspot-predictor'" >Research</button><br><br><br><br><br><br>
+            <button type="button" class="btn btn-outline-primary option-btn" onclick="window.open('https://github.com/Team-Hawking/dengue-hotspot-predictor#dengue-hotspot-predictor')" >Research</button><br><br><br><br><br><br>
 
-            <button type="button" class="btn btn-outline-info feature-btn">Population</button><br>
-            <button type="button" class="btn btn-outline-info feature-btn">Temperature</button><br>
-            <button type="button" class="btn btn-outline-info feature-btn" onclick="window.location='./vegetation.html'">Vegetation</button><br>
-            <button type="button" class="btn btn-outline-info feature-btn">Precipitation</button><br>
-            <button type="button" class="btn btn-outline-info feature-btn">Humidity</button><br>
+            <button type="button" class="btn btn-outline-info feature-btn" onclick="window.open('./population.html')">Population</button><br>
+            <button type="button" class="btn btn-outline-info feature-btn" onclick="window.open('./temperature.html')">Temperature</button><br>
+            <button type="button" class="btn btn-outline-info feature-btn" onclick="window.open('./vegetation.html')">Vegetation</button><br>
+            <button type="button" class="btn btn-outline-info feature-btn" onclick="window.open('./precipitation.html')">Precipitation</button><br>
+            <button type="button" class="btn btn-outline-info feature-btn" onclick="window.open('./humidity.html')">Humidity</button><br>
         </div>
 
         <div class="earth_box">
@@ -268,18 +369,17 @@
                   <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
-              <li class="page-item" id="2003"><a class="page-link" href="#">
-                2003
-              </a></li>
-              <li class="page-item" id="2004"><a class="page-link" href="#">2004</a></li>
-              <li class="page-item" id="2005"><a class="page-link" href="#">2005</a></li>
-              <li class="page-item" id="2006"><a class="page-link" href="#">2006</a></li>
-              <li class="page-item" id="2007"><a class="page-link" href="#">2007</a></li>
-              <li class="page-item" id="2008"><a class="page-link" href="#">2008</a></li>
-              <li class="page-item" id="2009"><a class="page-link" href="#">2009</a></li>
-              <li class="page-item" id="2010"><a class="page-link" href="#">2010</a></li>
-              <li class="page-item" id="2011"><a class="page-link" href="#">2011</a></li>
-              <li class="page-item" id="2012"><a class="page-link" href="#">2012</a></li>
+              <li class="page-item" id="2003"><a class="page-link" href="#">2009</a></li>
+              <li class="page-item" id="2004"><a class="page-link" href="#">2010</a></li>
+              <li class="page-item" id="2005"><a class="page-link" href="#">2011</a></li>
+              <li class="page-item" id="2006"><a class="page-link" href="#">2012</a></li>
+              <li class="page-item" id="2007"><a class="page-link" href="#">2013</a></li>
+              <li class="page-item" id="2008"><a class="page-link" href="#">2014</a></li>
+              <li class="page-item" id="2009"><a class="page-link" href="#">2015</a></li>
+              <li class="page-item" id="2010"><a class="page-link" href="#">2016</a></li>
+              <li class="page-item" id="2011"><a class="page-link" href="#">2017</a></li>
+              <li class="page-item" id="2012"><a class="page-link" href="#">2018</a></li>
+              <li class="page-item active" id="2013"><a class="page-link" href="#">2019</a></li>
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
@@ -289,25 +389,151 @@
           </nav>
         </div>
   </body>
-
-  <!-- <script>
-    $(".page-item").click(function(){
-      ["#2003", "#2004", "#2005", "#2006", "#2007", "#2008", "#2009", "#2010", "#2011", "#2012"].forEach(obj => {
-
-        if ($(obj).hasClass("active")) {
-          console.log($(obj).hasClass("active"));
-            $(obj).remove("active");
-        }
-        $(this).addClass("page-item")
-
-      });
-      if($(this).hasClass("page-item active")) {
-        $(this).addClass("page-item")
-      } else {
-        $(this).addClass("page-item active")
+  <script>
+  let p3Data = [
+      [
+        [21.604994, 99.156330],
+        [22.594170, 98.256440],
+        [23.414281, 97.356551],
+        [24.324362, 96.456661],
+        [22.234453, 95.556771],
+        [22.144544, 94.656881]
+      ],
+      [
+        [27.604990, 89.056310],
+        [27.594170, 88.256410],
+        [26.414280, 87.356511],
+        [26.324360, 86.456611],
+        [26.234450, 85.556711],
+        [27.144540, 84.656811],
+        [26.944540, 84.056811]
+      ],
+      [
+        [23.604994, 90.156330],
+        [23.594170, 90.256440],
+        [23.414281, 90.356551],
+        [23.324362, 90.456661],
+        [23.634453, 90.556771],
+        [23.644544, 90.656881],
+      ],
+      [
+        [23.014994, 90.106330],
+        [23.094170, 90.206440],
+        [23.014281, 90.306551],
+        [23.024362, 90.406661],
+        [23.034453, 90.506771],
+        [23.044544, 90.606881],
+      ],
+      [
+        [27.014994, 90.106330],
+        [27.094170, 90.206440],
+        [27.014281, 90.306551],
+        [27.024362, 90.406661],
+        [27.034453, 90.506771],
+        [27.044544, 90.606881],
+      ],
+      [
+        [28.014994, 90.106330],
+        [28.094170, 90.206440],
+        [27.014281, 90.306551],
+        [28.024362, 90.406661],
+        [27.034453, 90.506771],
+        [28.044544, 90.606881],
+      ],
+      [
+        [29.014994, 91.106330],
+        [29.094170, 91.206440],
+        [29.014281, 91.306551],
+        [29.024362, 91.406661],
+        [29.034453, 91.506771],
+        [30.044544, 91.606881],
+      ],
+      [
+        [22.014994, 78.106330],
+        [20.094170, 75.206440],
+        [20.014281, 78.306551],
+        [20.024362, 78.406661],
+        [20.034453, 75.506771],
+        [21.044544, 70.606881],
+        [21.044544, 70.606881],
+        [21.044544, 71.606881],
+        [21.044544, 71.606881],
+      ],
+      [
+        [20.014994, 78.106330],
+        [20.094170, 75.206440],
+        [20.014281, 78.306551],
+        [20.024362, 78.406661],
+        [20.034453, 75.506771],
+        [20.044544, 70.606881],
+        [20.044544, 70.606881],
+        [20.044544, 71.606881],
+        [20.044544, 71.606881],
+      ],
+      [
+        [20.014994, 80.106330],
+        [20.094170, 80.206440],
+        [22.014281, 80.306551],
+        [20.024362, 80.406661],
+        [20.034453, 80.506771],
+        [25.044544, 80.606881],
+      ],
+      [
+        [-0.789275, 113.721326],
+        [-0.709275, 113.821326],
+        [-0.819275, 112.921326],
+        [-0.729275, 113.021326],
+        [-0.739275, 111.121326],
+        [-0.089275, 112.221326],
+      ],
+      [
+        [-0.689275, 113.721326],
+        [-0.609275, 113.821326],
+        [-0.619275, 112.921326],
+        [-0.629275, 113.021326],
+        [-0.639275, 111.121326],
+        [-0.089275, 112.221326],
+      ],
+      [
+        [-0.159275, 110.721326],
+        [-0.159275, 110.821326],
+        [-0.119275, 110.921326],
+        [-0.129275, 110.021326],
+        [-0.139275, 111.121326],
+        [-0.189275, 112.221326],
+      ]
+  ]
+  $(".page-item").click(function(event){
+    ["#2003", "#2004", "#2005", "#2006", "#2007", "#2008", "#2009", "#2010", "#2011", "#2012", "#2013"].forEach(obj => {
+      if($(obj).attr('class') === "page-item active") {
+        $(obj).removeClass("page-item active")
       }
-    })
-  </script> -->
+      $(this).addClass("page-item active");
+    });
+    year = event.target.innerHTML;
+    console.log(year);
+    // redraw polygon again
+    let polygon;
+    if (year === "2009") {
+    for (let j = 0; j<p3Data.length;j++) {
+      for (i = 0; i< 45;i++) {
+        polygonA = WE.polygon(p3Data[j], {
+          color: '#000000',
+        opacity: 1,
+        fillColor: '#c33232',
+        fillOpacity: 0.1,
+        // editable: true,
+        weight: 2
+        });
+        polygonA.addTo(earth);
+        }
+      }
+    }
+  });
+
+  </script>
+
+
   <!-- bootstrap stuffs -->
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

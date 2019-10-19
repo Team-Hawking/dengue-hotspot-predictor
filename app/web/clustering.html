@@ -32,7 +32,7 @@
     </script>
 
     <style>
-#mapid { height: 800px; }
+      #mapid { height: 800px; }
     </style>
 
   </head>
@@ -180,42 +180,56 @@
       {
         "name": "square hospital",
         "lat": 23.8100,
-        "lng": 90.4300
+        "lng": 90.4300,
+        "capacity": 1000,
+        "patients": 900
       },
       {
         "name": "DMC hospital",
         "lat": 23.8000,
-        "lng": 90.4100
+        "lng": 90.4100,
+        "capacity": 1200,
+        "patients": 500
       }, {
 
         "name": "united hospital",
         "lat": 23.8200,
-        "lng": 90.3180
+        "lng": 90.3180,
+        "capacity": 1000,
+        "patients": 900
       },
       {
         "name": "Apollo hospital",
         "lat": 23.4510,
-        "lng": 90.2254
+        "lng": 90.2254,
+        "capacity": 1500,
+        "patients": 700
       }, {
 
         "name": "labaid hospital",
         "lat": 23.4852,
-        "lng": 90.2355
+        "lng": 90.2355,
+        "capacity": 5000,
+        "patients": 900
       }, {
         "name": "uttara hospital",
         "lat": 23.4816,
-        "lng": 90.2457
+        "lng": 90.2457,
+        "capacity": 2000,
+        "patients": 198
       },
       {
         "name": "poribaag hospital",
         "lat": 23.4835,
-        "lng": 90.2551
+        "lng": 90.2551,
+        "capacity": 5000,
+        "patients": 1700
       }
     ]
     //
       latLongHospital.forEach(function (hos) {
         let marker = L.marker(hos).addTo(mymap);
-        marker.bindPopup(`<b>${hos.name} </b><br>Capacity: 1000<br>Patients: 100`).openPopup();
+        marker.bindPopup(`<b>${hos.name} </b><br>Capacity: ${hos.capacity}<br>Patients: ${hos.patients}`).openPopup();
       })
 
 
