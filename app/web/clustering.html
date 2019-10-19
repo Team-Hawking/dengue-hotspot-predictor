@@ -6,32 +6,32 @@
 
     <!-- Leaflet Js -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin=""/>
+                           integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+                           crossorigin=""/>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-      crossorigin=""></script>
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
 
 
     <!-- GEO JSON -->
     <script>
-    var geojsonFeature = {
-      "type": "Feature",
-      "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-104.99404, 39.75621]
-      }
-    };
+      var geojsonFeature = {
+        "type": "Feature",
+        "properties": {
+          "name": "Coors Field",
+          "amenity": "Baseball Stadium",
+          "popupContent": "This is where the Rockies play!"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-104.99404, 39.75621]
+        }
+      };
     </script>
 
     <style>
-      #mapid { height: 800px; }
+#mapid { height: 800px; }
     </style>
 
   </head>
@@ -40,7 +40,7 @@
     <h1>Clustering of dengue cases and nearby hospitals</h1>
     <div>
 
-       <div id="mapid"></div>
+      <div id="mapid"></div>
 
     </div>
   </body>
@@ -49,11 +49,11 @@
   <script>
     const mymap = L.map('mapid').setView([23.8103, 90.4125], 11   );
     L.tileLayer(
-    'https://api.mapbox.com/styles/v1/mapbox/emerald-v8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWJyYXJzaGFyaWFyIiwiYSI6ImNrMXZyMGhnazA0aGEzaG0wMGU1YmVjZnkifQ.jhvdryFYh4_8rLHkX2o5KQ', {
-      tileSize: 512,
-      zoomOffset: -1,
-      attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(mymap);
+      'https://api.mapbox.com/styles/v1/mapbox/emerald-v8/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWJyYXJzaGFyaWFyIiwiYSI6ImNrMXZyMGhnazA0aGEzaG0wMGU1YmVjZnkifQ.jhvdryFYh4_8rLHkX2o5KQ', {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(mymap);
 
 
     // dengue red spots
@@ -67,84 +67,84 @@
       "lat": 23.8131,
       "lng": 90.3180
     },
-    {
-      "lat": 23.7131,
-      "lng": 90.1180
-    },
-    {
-      "lat": 23.7131,
-      "lng": 90.9180
-    },
-    {
-      "lat": 23.8131,
-      "lng": 90.4180
-    },
-    {
-      "lat": 23.8931,
-      "lng": 90.4980
-    },
-    {
-      "lat": 23.8191,
-      "lng": 90.4380
-    },
-    {
-      "lat": 23.8121,
-      "lng": 90.4360
-    },
-    {
-      "lat": 23.8129,
-      "lng": 90.4367
-    },
-    {
-      "lat": 23.8121,
-      "lng": 90.4361
-    },
-    {
-      "lat": 23.8191,
-      "lng": 90.4311
-    },
-    {
-      "lat": 23.8101,
-      "lng": 90.4301
-    },
-    {
-      "lat": 23.8100,
-      "lng": 90.4300
-    },
-    {
-      "lat": 23.8100,
-      "lng": 90.4100
-    },
-    {
-    "lat": 23.4590,
-    "lng": 90.2294
-    }, {
-    "lat": 23.4842,
-    "lng": 90.2345
-    }, {
-    "lat": 23.4826,
-    "lng": 90.2467
-    },
-    {
-     "lat": 23.4895,
-     "lng": 90.2591
-   },
+      {
+        "lat": 23.7131,
+        "lng": 90.1180
+      },
+      {
+        "lat": 23.7131,
+        "lng": 90.9180
+      },
+      {
+        "lat": 23.8131,
+        "lng": 90.4180
+      },
+      {
+        "lat": 23.8931,
+        "lng": 90.4980
+      },
+      {
+        "lat": 23.8191,
+        "lng": 90.4380
+      },
+      {
+        "lat": 23.8121,
+        "lng": 90.4360
+      },
+      {
+        "lat": 23.8129,
+        "lng": 90.4367
+      },
+      {
+        "lat": 23.8121,
+        "lng": 90.4361
+      },
+      {
+        "lat": 23.8191,
+        "lng": 90.4311
+      },
+      {
+        "lat": 23.8101,
+        "lng": 90.4301
+      },
+      {
+        "lat": 23.8100,
+        "lng": 90.4300
+      },
+      {
+        "lat": 23.8100,
+        "lng": 90.4100
+      },
+      {
+        "lat": 23.4590,
+        "lng": 90.2294
+      }, {
+        "lat": 23.4842,
+        "lng": 90.2345
+      }, {
+        "lat": 23.4826,
+        "lng": 90.2467
+      },
+      {
+        "lat": 23.4895,
+        "lng": 90.2591
+      },
 
-   {
-   "lat": 23.4490,
-   "lng": 90.2150
-   }, {
-   "lat": 23.4792,
-   "lng": 90.2295
-   }, {
-   "lat": 23.4776,
-   "lng": 90.2377
-   },
-   {
-    "lat": 23.4715,
-    "lng": 90.2411
-  }
-  ];
+      {
+        "lat": 23.4490,
+        "lng": 90.2150
+      }, {
+        "lat": 23.4792,
+        "lng": 90.2295
+      }, {
+        "lat": 23.4776,
+        "lng": 90.2377
+      },
+      {
+        "lat": 23.4715,
+        "lng": 90.2411
+      }
+    ];
 
     latLongDengue.forEach(function(coord) {
       var circle = L.circle(coord, {
@@ -159,53 +159,63 @@
     // longitude: 23 degrees 45 minutes 10 seconds
     // latitude: 90 degrees 22 minutes 54 seconds
     //
-    // CMH hospital:
+      // CMH hospital:
     // longitude: 23 degrees 48 minutes 52 seconds
     // latitude: 90 degrees 23 minutes 55 seconds
     //
-    // united hospital:
+      // united hospital:
     // longitude: 23 degrees 48 minutes 16 seconds
     // latitude: 90 degrees 24 minutes 57 seconds
     //
-    // Apollo hospital:
+      // Apollo hospital:
     // longitude: 23 degrees 48 minutes 35 seconds
     // latitude: 90 degrees 25 minutes 51 seconds
     //
-    // Labaid specialized hospital:
+      // Labaid specialized hospital:
     // longitude: 23 degrees 44 minutes 31 seconds
     // latitude: 90 degrees 22 minutes 59 seconds
 
     const latLongHospital = [
       {
-      "lat": 23.8100,
-      "lng": 90.4300
-      }, {
-      "lat": 23.8000,
-      "lng": 90.4100
-      }, {
-      "lat": 23.8200,
-      "lng": 90.3180
+        "name": "square hospital",
+        "lat": 23.8100,
+        "lng": 90.4300
       },
       {
-      "lat": 23.4510,
-      "lng": 90.2254
+        "name": "CMH",
+        "lat": 23.8000,
+        "lng": 90.4100
       }, {
-      "lat": 23.4852,
-      "lng": 90.2355
-      }, {
-      "lat": 23.4816,
-      "lng": 90.2457
+
+        "name": "united hospital",
+        "lat": 23.8200,
+        "lng": 90.3180
       },
       {
-       "lat": 23.4835,
-       "lng": 90.2551
-     }
+        "name": "Apollo hospital",
+        "lat": 23.4510,
+        "lng": 90.2254
+      }, {
+
+        "name": "labaid hospital",
+        "lat": 23.4852,
+        "lng": 90.2355
+      }, {
+        "name": "uttara hospital",
+        "lat": 23.4816,
+        "lng": 90.2457
+      },
+      {
+        "name": "poribaag hospital",
+        "lat": 23.4835,
+        "lng": 90.2551
+      }
     ]
     //
-    latLongHospital.forEach(function (hos) {
-      let marker = L.marker(hos).addTo(mymap);
-      marker.bindPopup("<b>Hospital X</b><br>Capacity: 1000<br>Patients: 100").openPopup();
-    })
+      latLongHospital.forEach(function (hos) {
+        let marker = L.marker(hos).addTo(mymap);
+        marker.bindPopup(`<b>Hospital ${hos.name} </b><br>Capacity: 1000<br>Patients: 100`).openPopup();
+      })
 
 
 
