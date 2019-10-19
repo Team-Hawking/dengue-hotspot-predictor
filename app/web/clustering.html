@@ -182,7 +182,7 @@
         "lng": 90.4300
       },
       {
-        "name": "CMH",
+        "name": "DMC hospital",
         "lat": 23.8000,
         "lng": 90.4100
       }, {
@@ -214,7 +214,7 @@
     //
       latLongHospital.forEach(function (hos) {
         let marker = L.marker(hos).addTo(mymap);
-        marker.bindPopup(`<b>Hospital ${hos.name} </b><br>Capacity: 1000<br>Patients: 100`).openPopup();
+        marker.bindPopup(`<b>${hos.name} </b><br>Capacity: 1000<br>Patients: 100`).openPopup();
       })
 
 
